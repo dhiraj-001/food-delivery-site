@@ -34,7 +34,7 @@ export default function Feedback() {
   return (
     <div className="feedbk">
       <div className="feedbk-part">
-        <h1 className='dancing-script-ft text-center'>Customer Reviews</h1>
+        <h1 className='merienda-1 text-center rvw-text'>Customer Reviews</h1>
         <div className="feedbk-part-rvws">
           <div className="feedbk-part-rvw" id="feedbk-part1">
             <img src={imgs[currentIndex]} alt="" />

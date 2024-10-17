@@ -72,6 +72,9 @@ body{
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Space+Grotesk:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Space+Grotesk:wght@300..700&family=Updock&family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Merienda:wght@300..900&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Space+Grotesk:wght@300..700&family=Updock&family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Space+Grotesk:wght@300..700&family=Updock&family=Vidaloka&display=swap');
+
 .dancing-script-ft {
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
@@ -93,7 +96,7 @@ body{
 
 .bree-serif-regular {
   font-family: "Bree Serif", serif;
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
 }
 .eczar-ft {
@@ -123,6 +126,17 @@ body{
   font-weight: 400;
   font-style: normal;
 }
+.playwrite-gb-s-1 {
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.merienda-1 {
+  font-family: "Merienda", cursive;
+
+}
+
 
 
 
@@ -185,7 +199,13 @@ body{
 .img-head{
   height: 600px;
 }
-
+.para-detail{
+  color: rgb(255, 255, 255);
+ font-size: 1.4rem;
+ width: 600px;
+ font-weight: 100 !important;
+ letter-spacing: 1px;
+}
 .order-btn{
   background-color: rgba(7, 1, 18, 0.816);
   backdrop-filter: blur(10px);
@@ -389,11 +409,13 @@ body{
   align-items: center;
   overflow: hidden ;
 }
+
 .food-ctg h2{
-  
   text-align: center;
   margin-top: 20px;
-  color: #d4cb48;
+  font-weight: 600;
+  color:#d4cb48 ;
+  font-size: 3rem !important;
   text-shadow:2px 2px 2px #05050595;
   display: flex;
   justify-content: center;
@@ -540,7 +562,7 @@ transition: .3s;
   font-weight: 900;
   margin-top: 30px;
   font-size: 42px !important;
-  color: #c8b4e2cf;
+  color: #bba4d3;
   /* text-shadow: 2px 2px 2px #ffffff; */
 
 }

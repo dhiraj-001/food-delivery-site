@@ -8,7 +8,7 @@ export default function Deals() {
   return (
     <div className="deals">
       <h2>Super Delicious Deals
-<FontAwesomeIcon icon={faFire}/>
+<FontAwesomeIcon icon={faFire} />
       </h2>
       <div className="deals-cards">
         <div className="deals-card" id="deal-card1">

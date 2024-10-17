@@ -5,7 +5,7 @@ import img from '../img/dots-blue.png'
 export default function MidPart() {
   return (
     <div className="middle-part">
-{/* <img className='dots' src={img} alt="" /> */}
+
       <div className="restr">
         <h3 className="dancing-script-ft">Popular resturants</h3>
         <div className="restr-list">

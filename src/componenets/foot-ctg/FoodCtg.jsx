@@ -9,7 +9,7 @@ import { faUtensils } from '@fortawesome/free-solid-svg-icons';
 export default function FoodCtg() {
   return (
     <div className="food-ctg">
-      <h2 className="nerko-one-regular">
+      <h2 className="merienda-1 mb-7 food-ctg-h2">
         Top Dishes
         <FontAwesomeIcon icon={faUtensils}/>
       </h2>

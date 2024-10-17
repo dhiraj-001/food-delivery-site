@@ -53,16 +53,19 @@ export default function Header() {
         </div>
       </nav>
       <div className="head-p1">
-        <div className="text-head-p2">
+        <div className="text-head-p2 mt-5">
           <div className="deliver">
           <FontAwesomeIcon icon={faTruck} />
             <p className="deliver-p">Easy way to order your food</p>
           </div>
-          <h1 className="head-logo-name head-txt-m">Aahar</h1>
+          <h1 className="head-logo-name head-txt-m">Maihang</h1>
           <div className="bar" />
           <h4 className="head-logo-tag head-txt-s dancing-script-ft">
             Let's have a taste of delicious <p className="vidaloka-regular">Assamese food</p>
           </h4>
+          <p className='para-detail bree-serif-regular'>
+          Assamese food makes people think of big family dinners. So you may want to position your restaurant as a place to bring the whole family.
+          </p>
           <button className='order-btn h-18 w-full text-yellow-500 text-xl rounded-lg p-1 mt-5 pacifico-regular'>
             Order Now
           </button>

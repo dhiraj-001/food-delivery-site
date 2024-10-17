@@ -9,8 +9,8 @@ export default function Process() {
     
     <div className="process">
       <div className="process-head">
-        <h1>How it works ?</h1>
-        <h3>simple process</h3>
+        <h1 className='merienda-1'>How it works ?</h1>
+        <h3 className='playwrite-gb-s-1 text-3xl'>simple process</h3>
       </div>
       <div className="process-box">
         <div className="procs-img">
