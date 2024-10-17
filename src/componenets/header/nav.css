@@ -1,0 +1,303 @@
+/*CSS page*/
+/*New Css Project*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+ul {
+  list-style-type: none;
+  display: flex;
+  padding: 6px 0 !important;
+  background-color: #120a1b;
+  animation: 12s myGradient infinite;
+  border-radius: 26px;
+  box-shadow: rgb(236 230 231 / 76%) 1px 1px 0px 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+/* .nav-type{
+  transform:translateX(50px) ;
+  width: 30px;
+  opacity: 0;
+  animation: showNav .5s 1s linnear 1 forward;
+
+}
+@keyframes shownav{
+  to{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0px);
+  }
+} */
+
+@keyframes myGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  
+  50%{
+    background-position: 100% 50%;
+  }
+  
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.fa-search{
+  transition: 1s;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.active {
+  transition: 1s;
+}
+
+.active1{
+  transition: 1s;
+}
+
+.active2 {
+  transition: 1s;
+}
+
+.active3 {
+  transition: 1s;
+}
+
+li a {
+  color: #d4cb48;
+  text-decoration: none;
+  padding: 35px 35px;
+  font-family: verdana;
+  font-weight: lighter;
+  font-size: 14px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+li a:hover{
+  font-size: 17px;
+}
+.navigation {
+  position: absolute;
+  top: 2px;
+}
+
+.navigation nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw;
+}
+
+.logo{
+  height: 120px;
+
+}
+.fa-search:hover {
+  color: #fff;
+  animation: 1.5s myFlash linear infinite;
+  text-shadow: 2px 2px 30px #fff;
+  transition: 2s;
+  font-size: 17px;
+}
+
+.active3:hover {
+  color: #fff;
+  animation: 1.5s myFlash linear infinite;
+  text-shadow: 2px 2px 30px #fff;
+  transition: 2s;
+  margin-top: -100px;
+}
+
+.active2:hover {
+  color: #fff;
+  animation: 1.5s myFlash linear infinite;
+  text-shadow: 2px 2px 30px #fff;
+  transition: 2s;
+}
+
+.active1:hover {
+  color: #fff;
+  animation: 1.5s myFlash linear infinite;
+  text-shadow: 2px 2px 30px #fff;
+  transition: 2s;
+}
+
+.active:hover {
+  color: #fff;
+  animation: 1.5s myFlash linear infinite;
+  text-shadow: 2px 2px 30px #fff;
+  transition: 2s;
+}
+
+@keyframes myFlash {
+  0% {
+    opacity: 1;
+    text-shadow: transparent;
+  }
+  
+  50% {
+    opacity: .1;
+  }
+  
+  100% {
+    opacity: 1;
+    text-shadow: 2px 2px 20px #fff;
+  }
+}
+
+
+@keyframes myBackground {
+  0% {
+    background-position: 0% 50%;
+    opacity: 0%;
+  }
+  
+  50% {
+    background-position: 100% 50%;
+  }
+  
+  100% {
+    background-position: 0% 50%;
+    opacity: 1;
+  }
+}
+
+
+@keyframes myLinear {
+  0%{
+    width: 50px;
+  }
+  
+  100% {
+    width: 250px;
+  }
+}
+nav {
+  transition: 3s;
+  animation: 3s myAnimation ease linear;
+}
+
+@keyframes myAnimation {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav-type {
+  animation: 3s myWorld ease linear;
+}
+
+@keyframes myWorld {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+@media(max-width: 767px) {
+
+  
+  .navigation {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  
+  .text-content-fluid {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 65%;
+    left: 50%;
+  }
+  
+  ul {
+    padding: 15px 0;
+  }
+  
+  
+  li a {
+    padding: 34px 34px;
+    font-size: 23px;
+    font-weight: lighter;
+  }
+  
+
+}
+
+@media(max-width: 767px) {
+  .text-content-fluid {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 60%;
+  }
+}
+
+.line {
+  height: 40px;
+  width: 2px;
+  background: #fff;
+  margin: 0;
+  position: absolute;
+  left: 88%;
+  top: 25%;
+}
+
+
+@keyframes myLineargradient {
+  0% {
+    background-position: 0% 50%;
+    box-shadow: 2px 3px 20px #ff1700;
+  }
+  
+  50% {
+    background-position: 100% 50%;
+     box-shadow: none;
+  }
+  
+  100% {
+    background-position: 0% 50%;
+     box-shadow: 2px 3px 20px #ff1700;
+  }
+}
+
+.log-sign{
+  display: flex;
+  list-style-type: none;
+  display: flex;
+  padding: 6px 0;
+  animation: 12s myGradient infinite;
+
+
+
+}
+.log-sign a{
+padding:  7px 30px;
+}
+
+.log-sign a:hover{
+  padding: 12px 34px;
+  transition: .3s;
+  }
+
+.signup{
+  backdrop-filter: blur(20px);
+  color: #d4cb48;
+  border-radius: 22px;
+  box-shadow:rgb(236 230 231 / 76%) 1px 1px 3px 0px;
+}
+.login{
+  background-color: #120a1b;
+  border-radius: 22px;
+  box-shadow: rgb(236 230 231 / 76%) 1px 1px 3px 0px;
+}
