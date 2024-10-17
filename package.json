@@ -1,12 +1,12 @@
 {
-  "homepage": "https://dhiraj-001/github.io/food-delivery-site-react",
+  "homepage": "https://dhiraj-001/github.io/food-delivery-site",
   "name": "food-site-react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-[ages -d dist",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
