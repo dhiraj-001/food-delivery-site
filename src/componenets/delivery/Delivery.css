@@ -1,0 +1,20 @@
+.delivery-main{
+  display: flex;
+  align-items: center;
+}
+
+.delivery{
+ border: 2px solid rgb(116, 67, 190);
+ height: 35rem;
+ width: 85rem;
+}
+.sm-text{
+  font-size: 1rem;
+  color: yellow;
+}
+
+.del-head{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

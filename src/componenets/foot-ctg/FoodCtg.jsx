@@ -4,7 +4,7 @@ import img1 from '../img/img1.jpg';
 import img2 from '../img/img2.jpg';
 import img3 from '../img/img3.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUtensils } from '@fortawesome/free-solid-svg-icons';
+import { faAngleLeft, faAngleRight, faUtensils } from '@fortawesome/free-solid-svg-icons';
 
 export default function FoodCtg() {
   return (
@@ -77,8 +77,8 @@ export default function FoodCtg() {
           </div>
         </div>
         <div className="dish_btn">
-          <i className="fa-solid fa-angles-left prev-dish"></i>
-          <i className="fa-solid fa-angles-right next-dish"></i>
+          <FontAwesomeIcon icon={faAngleLeft} className="fa-solid fa-angles-left pn-dish prev-dish"/>
+          <FontAwesomeIcon icon={faAngleRight} className="fa-solid fa-angles-right pn-dish next-dish"/>
         </div>
         <div className="dish-cards">
           <div className="dish-card" id="dishcards2">

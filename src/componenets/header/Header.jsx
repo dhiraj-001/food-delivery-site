@@ -12,24 +12,24 @@ export default function Header() {
               <img src={img1} alt="" className="logo" />
             </div>
             <div>
-              <ul className="nav-type">
-                <li>
-                  <a href="https://codepen.io/EneergeticTomy/" target="_blank" className="active">
+              <ul className="nav-type ul">
+                <li className="li">
+                  <a href="#" target="_blank" className="active">
                     Home
                   </a>
                 </li>
-                <li>
-                  <a href="https://codepen.io/TomikaBoy/full/LqMpaE" target="_blank" className="active1">
+                <li className="li">
+                  <a href="#" target="_blank" className="active1">
                     Dishes
                   </a>
                 </li>
-                <li>
-                  <a href="https://codepen.io/" target="_blank" className="active2">
+                <li className="li">
+                  <a href="#" target="_blank" className="active2">
                     Locations
                   </a>
                 </li>
-                <li>
-                  <a href="https://w3schools.com/" target="_blank" className="active3">
+                <li className="li">
+                  <a href="#" target="_blank" className="active3">
                     Orders
                   </a>
                 </li>
@@ -37,12 +37,12 @@ export default function Header() {
             </div>
             <div>
               <div className="log-sign">
-                <li>
+                <li className="li">
                   <a className="login" href="">
                     Login
                   </a>
                 </li>
-                <li>
+                <li className="li">
                   <a className="signup" href="">
                     Signup
                   </a>
