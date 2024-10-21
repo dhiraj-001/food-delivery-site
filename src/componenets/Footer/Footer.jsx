@@ -24,7 +24,11 @@ export function FooterWithSocialLinks() {
     <footer className="relative w-full">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
-         <img src={img1} className="h-40" alt="" />
+          <div>
+               <img src={img1} className="h-40 pl-8" alt="" /> 
+               <p className="email text-gray-400 ml-6">gogoidhiraj207@gmail.com</p>
+          </div>
+     
           <div className="grid grid-cols-3 justify-between gap-4">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
@@ -41,7 +45,7 @@ export function FooterWithSocialLinks() {
                       as="a"
                       href="#"
                       color="white"
-                      className="py-1.5 font-normal transition-colors hover:text-gray-100"
+                      className="py-1.5 font-normal transition-colors hover:text-gray-300"
                     >
                       {link}
                     </Typography>
@@ -56,7 +60,7 @@ export function FooterWithSocialLinks() {
             variant="small"
             className="mb-4 text-center font-normal text-gray-400 md:mb-0"
           >
-            &copy; {currentYear} <a href="https://material-tailwind.com/">Dhiraj</a>. All
+            &copy; {currentYear} <a href="https://github.com/dhiraj-001">Created by Dhiraj</a>. All
             Rights Reserved.
           </Typography>
           <div className="flex gap-4 text-gray-400 sm:justify-center">

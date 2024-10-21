@@ -2,6 +2,7 @@ import './nav.css'
 import img1 from '../img/Aahar-lg.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTruck } from '@fortawesome/free-solid-svg-icons';
+import {Link} from 'react-router-dom';
 export default function Header() {
   return (
     <div className="header-1">
@@ -9,43 +10,46 @@ export default function Header() {
         <div className="navigation">
           <nav>
             <div>
+              <a href="http://localhost:5173/food-delivery-site/">
               <img src={img1} alt="" className="logo" />
+              </a>
+              
             </div>
             <div>
               <ul className="nav-type ul">
                 <li className="li">
-                  <a href="#" target="_blank" className="active">
+                  <Link to="/food-delivery-site" className="active">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="li">
-                  <a href="#" target="_blank" className="active1">
+                  <Link to="/food-delivery-site/dishes"  className="active1">
                     Dishes
-                  </a>
+                  </Link>
                 </li>
                 <li className="li">
-                  <a href="#" target="_blank" className="active2">
+                  <Link to="/food-delivery-site/locations" className="active2">
                     Locations
-                  </a>
+                  </Link>
                 </li>
                 <li className="li">
-                  <a href="#" target="_blank" className="active3">
+                <Link to="/food-delivery-site/orders" className="active3">
                     Orders
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
             <div>
               <div className="log-sign">
                 <li className="li">
-                  <a className="login" href="">
+                  <Link className="login" to="/food-delivery-site/login">
                     Login
-                  </a>
+                  </Link>
                 </li>
                 <li className="li">
-                  <a className="signup" href="">
+                  <Link className="signup" to="/food-delivery-site/signup">
                     Signup
-                  </a>
+                  </Link>
                 </li>
               </div>
             </div>
