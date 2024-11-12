@@ -1,58 +1,72 @@
-import React from 'react';
-import nayantaraImage from '../img/nayantara.jpg';
-import img from '../img/dots-blue.png'
+import React from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import './MidPart.css'
+import nayantaraImage from "../img/nayantara.jpg";
+import Slider from "react-slick";
+ 
+import img from "../img/dots-blue.png";
+import {
+  faSquareCaretLeft,
+  faSquareCaretRight,
+  faStar,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { NavLink } from "react-router-dom";
 
 export default function MidPart() {
-  return (
-    <div className="middle-part">
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    centerPadding: "60px",
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+  };
 
-      <div className="restr">
-        <h3 className="dancing-script-ft">Popular resturants</h3>
-        <div className="restr-list">
-          <i className="fa-solid fa-square-caret-left prev-btn" id="pn-btn"></i>
-          <div className="restr1">
-            <section>
-              <img src={nayantaraImage} alt="" />
-              <i className="fa-solid fa-star" style={{ color: "#FFD43B" }}></i>
-              <div className="rate">5</div>
-            </section>
-            <p className="vidaloka-regular">Nayantara</p>
+
+  const Restrdetail = [
+    {
+      img1: nayantaraImage,
+      name: "Nayantara",
+    },
+    {
+      img1: nayantaraImage,
+      name: "Nayantara",
+    },
+    {
+      img1: nayantaraImage,
+      name: "Nayantara",
+    },
+    {
+      img1: nayantaraImage,
+      name: "Nayantara",
+    },
+    {
+      img1: nayantaraImage,
+      name: "Nayantara",
+    },
+  ];
+  return (
+    <div className="flex justify-center align-middle my-28">
+    <div className="restr-part w-9/12 ">
+      <Slider {...settings}>
+    {
+      Restrdetail.map((rest,i)=>{
+        return(
+        <NavLink to='/food-delivery-site/Development' className="cards bg-amber-400 rounded-lg relative ">
+          <div className="restr-img w-fit">
+            <img src={rest.img1} alt="Nayantara" className="rounded-t-lg"/>
           </div>
-          <div className="restr2">
-            <section>
-              <img src={nayantaraImage} alt="" />
-              <i className="fa-solid fa-star" style={{ color: "#FFD43B" }}></i>
-              <div className="rate">5</div>
-            </section>
-            <p className="vidaloka-regular">Nayantara</p>
+          <div className="restr-name z-20 text-black absolute bottom-4 text-center flex w-full justify-center bg-yellow-500 rounded-lg text-[30px] font-bold">
+            {rest.name}
           </div>
-          <div className="restr3">
-            <section>
-              <img src={nayantaraImage} alt="" />
-              <i className="fa-solid fa-star" style={{ color: "#FFD43B" }}></i>
-              <div className="rate">5</div>
-            </section>
-            <p className="vidaloka-regular">Nayantara</p>
-          </div>
-          <div className="restr4">
-            <section>
-              <img src={nayantaraImage} alt="" />
-              <i className="fa-solid fa-star" style={{ color: "#FFD43B" }}></i>
-              <div className="rate">5</div>
-            </section>
-            <p className="vidaloka-regular">Nayantara</p>
-          </div>
-          <div className="restr5">
-            <section>
-              <img src={nayantaraImage} alt="" />
-              <i className="fa-solid fa-star" style={{ color: "#FFD43B" }}></i>
-              <div className="rate">5</div>
-            </section>
-            <p className="vidaloka-regular">Nayantara</p>
-          </div>
-          <i className="fa-solid fa-square-caret-right nxt-btn" id="pn-btn"></i>
-        </div>
-      </div>
-    </div>
-  );
-}
+        </NavLink>)
+      })
+     
+      
+      }
+ </Slider>
+    </div></div>
+  )}

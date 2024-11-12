@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import chickenTikkaMasalaImage from '../img/Chicken-Tikka-Masala-IMAGE-5-2048x1365.jpg';
+
 import img1 from '../img/img1.jpg';
 import img2 from '../img/img2.jpg';
 import img3 from '../img/img3.jpg';
@@ -7,6 +8,29 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight, faUtensils } from '@fortawesome/free-solid-svg-icons';
 
 export default function FoodCtg() {
+   const bigImgs = [
+     chickenTikkaMasalaImage,
+     img1,
+     img2,
+     img3,
+   ]
+const [imgno, setImgno] = useState(0) ;
+const [cardIndex, setCardIndex] = useState(0);
+
+const prevClick = () =>{
+  if(cardIndex > 0){
+    setCardIndex(cardIndex - 1);
+    setImgno(cardIndex - 1);
+  }
+}
+
+const nextClick = () =>{
+  if(cardIndex < bigImgs.length - 1){
+    setCardIndex(cardIndex + 1);
+    setImgno(cardIndex + 1);
+  }
+}
+
   return (
     <div className="food-ctg">
       <h2 className="merienda-1 mb-7 food-ctg-h2">
@@ -17,7 +41,7 @@ export default function FoodCtg() {
         <div className="slide">
           <div className="food-ctg-2-part">
             <div className="big-img">
-              <img src={chickenTikkaMasalaImage} />
+              <img src={bigImgs[imgno]} />
             </div>
             <div className="big-fod-detail">
               <h3 className="big-fd-nme">
@@ -30,7 +54,7 @@ export default function FoodCtg() {
               </p>
             </div>
           </div>
-          <div className="food-ctg-2-part">
+          {/* <div className="food-ctg-2-part">
             <div className="big-img">
               <img src={img1} alt="" />
             </div>
@@ -74,29 +98,19 @@ export default function FoodCtg() {
                 Sequi
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="dish_btn">
-          <FontAwesomeIcon icon={faAngleLeft} className="fa-solid fa-angles-left pn-dish prev-dish"/>
-          <FontAwesomeIcon icon={faAngleRight} className="fa-solid fa-angles-right pn-dish next-dish"/>
+        <FontAwesomeIcon icon={faAngleLeft} onClick={prevClick} className="fa-solid fa-angles-left pn-dish prev-dish"/>
+        <FontAwesomeIcon icon={faAngleRight} onClick={nextClick} className="fa-solid fa-angles-right pn-dish next-dish"/>
         </div>
         <div className="dish-cards">
-          <div className="dish-card" id="dishcards2">
-            <img src={chickenTikkaMasalaImage} alt="" />
-            <h2>Chicken Tikka Masala</h2>
-          </div>
-          <div className="dish-card" id="dishcards3">
-            <img src={img1} alt="" />
-            <h2>Chicken Tikka Masala</h2>
-          </div>
-          <div className="dish-card" id="dishcards4">
-            <img src={img2} alt="" />
-            <h2>Chicken Tikka Masala</h2>
-          </div>
-          <div className="dish-card" id="dishcards5">
-            <img src={img3} alt="" />
-            <h2>Chicken Tikka Masala</h2>
-          </div>
+        {bigImgs.map((img, index) => (
+            <div className="dish-card" key={index} id={`dishcards${index + 2}`} style={{ display: cardIndex === index ? 'block' : 'none' }}>
+              <img src={img} alt={`Dish ${index + 1}`} />
+              <h2>Chicken Tikka Masala</h2>
+            </div>
+          ))}
         </div>
       </div>
     </div>

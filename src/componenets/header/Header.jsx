@@ -2,60 +2,65 @@ import './nav.css'
 import img1 from '../img/Aahar-lg.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTruck } from '@fortawesome/free-solid-svg-icons';
-import {Link} from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
+import Navbar from '../navbar/navbar';
 export default function Header() {
   return (
     <div className="header-1">
-      <nav className="navbar">
+      <Navbar/>
+      {/* <nav className="navbar">
         <div className="navigation">
           <nav>
-            <div>
+            <div className='nav-log-img'>
               <a href="http://localhost:5173/food-delivery-site/">
               <img src={img1} alt="" className="logo" />
               </a>
               
             </div>
+            <div className="nav-comp">
             <div>
               <ul className="nav-type ul">
                 <li className="li">
-                  <Link to="/food-delivery-site" className="active">
+                  <NavLink to="/food-delivery-site" className="active">
                     Home
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="li">
-                  <Link to="/food-delivery-site/dishes"  className="active1">
+                  <NavLink to="/food-delivery-site/dishes"  className="active1">
                     Dishes
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="li">
-                  <Link to="/food-delivery-site/locations" className="active2">
+                  <NavLink to="/food-delivery-site/locations" className="active2">
                     Locations
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="li">
-                <Link to="/food-delivery-site/orders" className="active3">
+                <NavLink to="/food-delivery-site/orders" className="active3">
                     Orders
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </div>
             <div>
               <div className="log-sign">
                 <li className="li">
-                  <Link className="login" to="/food-delivery-site/login">
+                  <NavLink className="login" to="/food-delivery-site/login">
                     Login
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="li">
-                  <Link className="signup" to="/food-delivery-site/signup">
+                  <NavLink className="signup" to="/food-delivery-site/signup">
                     Signup
-                  </Link>
+                  </NavLink>
                 </li>
               </div>
+            </div>              
             </div>
+
           </nav>
         </div>
-      </nav>
+      </nav> */}
       <div className="head-p1">
         <div className="text-head-p2 mt-5">
           <div className="deliver">

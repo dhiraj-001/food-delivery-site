@@ -187,6 +187,8 @@ body{
 }
 
 .head-p1{
+  position: relative;
+  top: 3.6rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -257,14 +259,14 @@ body{
  
   align-items: center;
 }
-.restr-list > div {
+/* .restr-list > div {
   position: relative;
 }
 .restr-list > div >section{
   position: relative;
 }
 
-.restr-list > div >section> i{
+.restr-list > div >section> .star-icon{
   position: absolute;
   top: 10px;
   right: 10px;
@@ -278,8 +280,8 @@ body{
   font-size: 10px;
 }
 .restr-list > div img {
-  width: 100%; /* set the image width to 100% of its parent */
-  height: 270px; /* set a fixed height for the image */
+  width: 100%; 
+  height: 270px; 
   object-fit: cover;
   border-radius: 10px; 
   transition: .4s ;
@@ -287,7 +289,7 @@ body{
   box-shadow: 0px 0px 20px 0px #616d3457;
 }
 .restr-list > div img:hover{
-  width: 100%; /* set the image width to 100% of its parent */
+  width: 100%; 
   height: 230px;
   cursor: pointer;
   box-shadow: 5px 1px 16px 5px #d7d7d7c4;
@@ -297,18 +299,18 @@ body{
 .restr-list > div p {
   position: absolute; 
   top: 80%;
-  left: 50%; /* center the paragraph horizontally */
+  left: 50%; 
   transform: translate(-50%, -50%);
   background-color: #d4cb48;
-  color: #050505; /* set the text color to white */
-  font-size: 18px !important; /* set the font size */
-  font-weight: bold; /* set the font weight to bold */
+  color: #050505; 
+  font-size: 18px !important;
+  font-weight: bold; 
   text-align: center;
   padding: 3px;
   border-radius: 4px;
   box-shadow: 3px 2px 3px 2px #38484cc4; 
-   /* center the text horizontally */
-}
+
+} */
 
 .restr{
   display: flex;
@@ -340,7 +342,7 @@ body{
   box-shadow: 5px 4px 7px -3px #ded8b6c4;
   font-size: 30px !important;
   
-  color: #000000;
+  color: #ffffff;
 }
 
 .head-p1 .deliver,

@@ -4,6 +4,7 @@
 nav{
   height: 100px;
 }
+
 .ul {
   list-style-type: none;
   display: flex;
@@ -14,6 +15,14 @@ nav{
   box-shadow: rgb(236 230 231 / 76%) 1px 1px 0px 0px;
   border-top-left-radius: 0px;
   border-bottom-right-radius: 0px;
+}
+
+.nav-comp{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-left: 20rem;
+  justify-content: space-around;
 }
 
 /* .nav-type{
@@ -274,10 +283,10 @@ nav {
 }
 
 .log-sign{
-  display: flex;
+
   list-style-type: none;
   display: flex;
-  padding: 6px 0;
+
   animation: 12s myGradient infinite;
 
 
@@ -302,4 +311,12 @@ padding:  7px 30px;
   background-color: #120a1b;
   border-radius: 22px;
   box-shadow: rgb(236 230 231 / 76%) 1px 1px 3px 0px;
+}
+
+@media screen and (max-width: 768px){
+  .nav-comp{
+    display: flex !important;
+    flex-direction: column !important;
+    
+  }
 }

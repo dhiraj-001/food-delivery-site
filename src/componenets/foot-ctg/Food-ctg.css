@@ -1,0 +1,22 @@
+
+
+
+.big-img {
+  /* Start from the bottom */
+  animation: slideInFromBottom 0.5s forwards; /* Apply the animation */
+}
+
+/* Keyframes for the slide-in effect */
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%); /* Start from below the container */
+    opacity: 0; /* Start invisible */
+  }
+  to {
+    transform: translateY(0); /* End at the original position */
+    opacity: 1; /* End fully visible */
+  }
+}
+
+/* Optional: Style for dish buttons */
+
