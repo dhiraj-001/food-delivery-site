@@ -1,0 +1,17 @@
+.img{
+  background-image: url(..\img\img11.jpg) !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.shd{
+  box-shadow: 0px 0px 20px 0px #ebceffd1;
+  border: 1px solid #ebceffd1;
+}
+
+.shd:hover{
+  box-shadow: 0px 0px 30px 0px #ebceffd1;
+  border: 1px solid #ebceffd1;
+}
+ 

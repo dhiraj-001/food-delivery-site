@@ -76,7 +76,9 @@ export default function Header() {
           Assamese food makes people think of big family dinners. So you may want to position your restaurant as a place to bring the whole family.
           </p>
           <button className='order-btn h-18 w-full text-yellow-500 text-xl rounded-lg p-1 mt-5 pacifico-regular'>
-            Order Now
+            <NavLink to="/food-delivery-site/Login">
+            Order Now              
+            </NavLink>
           </button>
         </div>
         <div className="img-head-p2">

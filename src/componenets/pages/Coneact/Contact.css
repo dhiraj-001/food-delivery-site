@@ -1,0 +1,14 @@
+.img{
+  background-image: url(..\..\img\img11.jpg) !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+section{
+  height: 100% !important;
+}
+
+.shd{
+  box-shadow: 2px 2px 20px -5px white;
+}

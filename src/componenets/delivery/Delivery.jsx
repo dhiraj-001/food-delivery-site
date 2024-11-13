@@ -1,6 +1,7 @@
 import React from 'react';
 import deliimg from '../img/Online-delivery-1.png'
 import './Delivery.css';
+import { NavLink } from 'react-router-dom';
 export default function Delivery() {
   return (
     <div>
@@ -32,12 +33,12 @@ export default function Delivery() {
             Plant-based diets may offer an advantage over those that are not plant based with respect to prevention and management of diabetes. the adventist health studies found that vegetarians have approximately half the risk of developing diabetes
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-              <a
-                href="#"
+              <NavLink
+                to='/food-delivery-site/Login'
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                Order Now
-              </a>
+              </NavLink>
               <a href="#" className="text-sm font-semibold leading-6 text-white">
                 Search Now <span aria-hidden="true">→</span>
               </a>

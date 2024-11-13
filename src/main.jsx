@@ -9,7 +9,8 @@ import {
 import MaintenanceSection4 from "./componenets/pages/about/About";
 import Home from "./componenets/pages/Home";
 import Login from './componenets/loginPage/Login.jsx';
-import Signup from './componenets/sigupPage/Signup.jsx';
+import Contact from './componenets/pages/Coneact/Contact.jsx';
+
 const Router = createBrowserRouter([
   { path: "/food-delivery-site", element: <Home /> },
   { path: "/food-delivery-site/dishes", element: <MaintenanceSection4 /> },
@@ -18,7 +19,8 @@ const Router = createBrowserRouter([
   { path: "/food-delivery-site/signup", element: <MaintenanceSection4 /> },
   { path: "/food-delivery-site/Development", element: <MaintenanceSection4 /> },
   { path: "/food-delivery-site/Login", element: <Login /> },
-  { path: "/food-delivery-site/Signup", element: <Signup /> },
+  {path: "/food-delivery-site/Contact", element: <Contact/>}
+
 
   // { path: '/contact', element: <Contact /> },
   // Add more routes as needed

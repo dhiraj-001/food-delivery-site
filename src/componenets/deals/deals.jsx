@@ -2,6 +2,7 @@ import React from 'react';
 import img1 from '../img/img1.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFire } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from 'react-router-dom';
 
 
 export default function Deals() {
@@ -53,7 +54,15 @@ export default function Deals() {
             <span className="deals-price">₹ 100</span>
           </p>
         </div>
+              <div className="all-dish text-[#bba4d3] font-extrabold hover:underline hover:cursor-pointer mb-9 text-xl rounded-lg" >
+                <NavLink 
+                to="/food-delivery-site/Development">
+                          All deals . . .
+                  </NavLink>
+
       </div>
+      </div>
+
     </div>
   );
 }
